@@ -1,8 +1,10 @@
+pathlib
 streamlit
-urllib3
+streamlit_option_menu
+request
 joblib
 pandas
 numpy
-requests
-pickle
-pathlib
+mediapipe
+cv2
+sklearn
