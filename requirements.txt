@@ -1,5 +1,6 @@
 streamlit
 urllib3
+joblib
 pandas
 numpy
 requests
