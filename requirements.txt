@@ -8,3 +8,6 @@ numpy
 mediapipe
 cv2
 sklearn
+nltk
+scikit-learn
+streamlit-player
