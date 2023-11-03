@@ -1,7 +1,7 @@
 # Import libraries
 from pathlib import Path
 import streamlit as st
-from streamlit_option_menu import option_menu
+#from streamlit_option_menu import option_menu
 from urllib.request import urlopen
 import joblib
 import pandas as pd
@@ -10,8 +10,8 @@ import requests
 import pickle 
 import mediapipe as mp
 import cv2
-import tempfile
-from sklearn.linear_model import LogisticRegression, RidgeClassifier
+#import tempfile
+#from sklearn.linear_model import LogisticRegression, RidgeClassifier
 
 
 # This code is different for each deployed app.
