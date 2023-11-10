@@ -22,3 +22,25 @@ Using Mediapipe, I captured the coordinates of the landmarks in these videos, en
 
 The coordinates were used to determine the correctness of the choreography move while the timestamps of the moves and beat times were compared to determine whether the rider is cycling to the beat.
 
+### Data Dictionary
+| Column | Data type | Description
+|:--------:|:-------:|:-------:|
+| `prompts` | string | the choreo move prompted by the game |
+| `choreo_results` | boolean | the binary outcome of whether `choreo` matches with `prompts` (0: correct, 1: incorrect)|
+| `angle_RIGHT_SHOULDER` | float | the hip-shoulder-elbow angle |
+| `angle_RIGHT_ELBOW` | float | the shoulder_elbow_wrist angle |
+| `beat_times` | float | the timestamp of the audio beats |
+| `time_diff` | float | the time difference between the right heel's minima/maxima and their closest beat_time |
+
+### Conclusion
+** Difficult to identify relative minima and maxima. More effective methods could be explored.
+** The choreography portion was significantly more successful while the tempo portion was crippled by the lack of data and class imbalance.
+** Despite high model scores, the predictions for choreo moves tend to be wrong in the deployment likely due to similar coordinate ranges.
+** This study might be ‘one-sided’ as majority of datasets are coordinates.
+
+### Recommendations
+* Increase complexity (e.g. train model with different songs or longer duration of the same song, add more moves, film from different angles)
+* Include more poor examples (e.g. more off-beat data to minimize class imbalance)
+* Use sensors for more accurate movement readings
+* Explore other features apart from coordinates (e.g. average speed of the rider, resistance of the bike)
+
