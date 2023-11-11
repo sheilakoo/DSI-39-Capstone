@@ -33,10 +33,10 @@ The coordinates were used to determine the correctness of the choreography move 
 | `time_diff` | float | the time difference between the right heel's minima/maxima and their closest beat_time |
 
 ### Conclusion
-** Difficult to identify relative minima and maxima. More effective methods could be explored.
-** The choreography portion was significantly more successful while the tempo portion was crippled by the lack of data and class imbalance.
-** Despite high model scores, the predictions for choreo moves tend to be wrong in the deployment likely due to similar coordinate ranges.
-** This study might be ‘one-sided’ as majority of datasets are coordinates.
+* Difficult to identify relative minima and maxima. More effective methods could be explored.
+* The choreography portion was significantly more successful while the tempo portion was crippled by the lack of data and class imbalance.
+* Despite high model scores, the predictions for choreo moves tend to be wrong in the deployment likely due to similar coordinate ranges.
+* This study might be ‘one-sided’ as majority of datasets are coordinates.
 
 ### Recommendations
 * Increase complexity (e.g. train model with different songs or longer duration of the same song, add more moves, film from different angles)
